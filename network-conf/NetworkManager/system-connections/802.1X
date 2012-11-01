@@ -1,0 +1,27 @@
+
+[ipv6]
+method=auto
+
+[connection]
+id=802.1X
+uuid=36c55a06-f0f8-4dd4-a871-d990c53e61ab
+type=802-11-wireless
+
+[802-11-wireless]
+ssid=802.1X
+mode=infrastructure
+security=802-11-wireless-security
+
+[802-1x]
+eap=ttls;
+identity=<change this>@studserv.uni-leipzig.de
+anonymous-identity=anonymous
+phase2-auth=pap
+password=<change this>
+
+[ipv4]
+method=auto
+
+[802-11-wireless-security]
+key-mgmt=wpa-eap
+auth-alg=open
